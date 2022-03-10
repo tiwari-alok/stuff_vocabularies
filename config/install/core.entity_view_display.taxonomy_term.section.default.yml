@@ -1,0 +1,32 @@
+uuid: b11c20c4-d522-42e9-85a5-9db8563632e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.section.field_indexed
+    - taxonomy.vocabulary.section
+  module:
+    - text
+id: taxonomy_term.section.default
+targetEntityType: taxonomy_term
+bundle: section
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_indexed:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

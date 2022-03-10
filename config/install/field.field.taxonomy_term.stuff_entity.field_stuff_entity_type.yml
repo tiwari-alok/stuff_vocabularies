@@ -1,0 +1,23 @@
+uuid: 4233f6f8-9764-497b-8863-4b5381e9bc18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_stuff_entity_type
+    - taxonomy.vocabulary.stuff_entity
+  module:
+    - options
+id: taxonomy_term.stuff_entity.field_stuff_entity_type
+field_name: field_stuff_entity_type
+entity_type: taxonomy_term
+bundle: stuff_entity
+label: Type
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: organisation
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,23 @@
+uuid: b7c4094c-278c-4d60-b053-4a7b3b540aa9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_indexed
+    - taxonomy.vocabulary.stuff_entity
+id: taxonomy_term.stuff_entity.field_indexed
+field_name: field_indexed
+entity_type: taxonomy_term
+bundle: stuff_entity
+label: Indexed
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

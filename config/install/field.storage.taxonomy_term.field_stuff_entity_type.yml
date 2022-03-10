@@ -1,0 +1,30 @@
+uuid: 7330727f-c3bc-4add-b3ae-0e5ad8f5901f
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - taxonomy
+id: taxonomy_term.field_stuff_entity_type
+field_name: field_stuff_entity_type
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: organisation
+      label: Organisation
+    -
+      value: person
+      label: Person
+    -
+      value: place
+      label: Place
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

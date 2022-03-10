@@ -1,0 +1,23 @@
+uuid: c1964281-384c-4721-b9ba-064ffbff0f5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_indexed
+    - taxonomy.vocabulary.section
+id: taxonomy_term.section.field_indexed
+field_name: field_indexed
+entity_type: taxonomy_term
+bundle: section
+label: Indexed
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

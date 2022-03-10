@@ -1,0 +1,41 @@
+uuid: 202c136a-9613-429c-bca9-5d45235c467f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.stuff_entity.field_indexed
+    - field.field.taxonomy_term.stuff_entity.field_stuff_entity_type
+    - taxonomy.vocabulary.stuff_entity
+  module:
+    - options
+    - text
+id: taxonomy_term.stuff_entity.default
+targetEntityType: taxonomy_term
+bundle: stuff_entity
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_indexed:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_stuff_entity_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }
