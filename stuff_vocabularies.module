@@ -1,0 +1,21 @@
+<?php
+
+// use Drupal\node\NodeInterface;
+// use Drupal\Core\Routing\RouteMatchInterface;
+// use Drupal\views\ViewExecutable;
+// use Drupal\views\Plugin\views\query\QueryPluginBase;
+use Drupal\Core\Form\FormStateInterface;
+/**
+ * @file
+ * Primary module hooks for stuff_vocabularies module.
+ */
+
+ /**
+ * Implements hook_form_alter().
+ */
+function stuff_vocabularies_form_alter(&$form, &$form_state, $form_id) {
+    // dpm($form_id);
+  if ($form_id == 'taxonomy_term_stuff_entity_form' || 'taxonomy_term_stuff_section_form' || 'taxonomy_term_stuff_topic_form') {
+        $form['name']['widget'][0]['value']['#title'] = 'Title';
+  }
+}

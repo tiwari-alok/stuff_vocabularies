@@ -1,0 +1,8 @@
+uuid: f4399159-c7f8-4a74-9d65-b75f505f0549
+langcode: en
+status: true
+dependencies: {  }
+name: Entity
+vid: stuff_entity
+description: ''
+weight: 0

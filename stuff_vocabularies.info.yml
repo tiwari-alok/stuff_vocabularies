@@ -1,0 +1,5 @@
+name: stuff_vocabularies
+type: module
+description: Creates a new set of vocabularies with additional fields
+package: Custom
+core_version_requirement: ^9 || ^10
